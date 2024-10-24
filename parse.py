@@ -9,7 +9,7 @@ my_template = (
     "3. **Empty Response:** If no information matches the description, return an empty string ('')."
     "4. **Direct Data Only:** Your output should contain only the data that is explicitly requested, with no other text."
 )
-model = OllamaLLM(model="moondream") # model
+model = OllamaLLM(model="llama3.1") # model
 
 def parse_with_ollama(dom_chunks, parse_description):
     prompt = ChatPromptTemplate.from_template(my_template)
